@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gem Sammlung</title>
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #1f1f1c;
+    --muted: #6b6b63;
+    --accent: #4f46e5;
+    --border: #e3e3dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --card: #1f1f24;
+      --text: #ececea;
+      --muted: #9a9a94;
+      --accent: #a5b4fc;
+      --border: #2e2e35;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 2.25rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+  a.gem {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    padding: 1rem 1.15rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color .15s, transform .15s;
+  }
+  a.gem:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .num {
+    flex: none;
+    width: 1.9rem; height: 1.9rem;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    font-size: .8rem; color: var(--muted);
+  }
+  .name { font-weight: 600; }
+  .arrow { margin-left: auto; color: var(--muted); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Gem Sammlung</h1>
+  <p class="sub">Meine Gemini Gems (KI-Agenten)</p>
+
+  <ul>
+    <li><a class="gem" href="https://gemini.google.com/gem/0214b2e0145a?usp=sharing"><span class="num">1</span><span class="name">Lerncoach BS Bebra</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/4d5ac6e6defe?usp=sharing"><span class="num">2</span><span class="name">Antworten-Pr&uuml;fer</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/e2dc4b4b49cc?usp=sharing"><span class="num">3</span><span class="name">Lernberater Wirtschafts-LK</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/e39923053d54?usp=sharing"><span class="num">4</span><span class="name">Teach a Robot</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/c61abcf6a622?usp=sharing"><span class="num">5</span><span class="name">Agenten Generator</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/c877bf14cc65?usp=sharing"><span class="num">6</span><span class="name">Politikzyklus interaktiv</span><span class="arrow">&rarr;</span></a></li>
+    <li><a class="gem" href="https://gemini.google.com/gem/2a0862a6e4e2?usp=sharing"><span class="num">7</span><span class="name">Dekontextualisierung oder Gamifyed Learning</span><span class="arrow">&rarr;</span></a></li>
+  </ul>
+
+  <footer>Die Links sind Gemini-Freigabelinks.</footer>
+</main>
+</body>
+</html>
